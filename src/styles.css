@@ -1,0 +1,602 @@
+body{
+  font-size: 1.2rem;
+  font-family: 'Lato', sans-serif;
+  background-color: #EFF5F5;
+  background-image: url("https://www.transparenttextures.com/patterns/pixel-weave.png");
+}
+
+button{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+.link-tag{
+  text-decoration: none;
+}
+
+.tweet-div{
+  width: 90%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.tweet-icon{
+  display: inline-block !important;
+  vertical-align: middle;
+}
+
+.tweet-display{
+  display: inline-block;
+  margin: 0;
+}
+
+.tweet-user{
+  margin-left: 10%;
+  font-size: 0.9rem;
+}
+
+.tweet-content{
+  font-size: 1rem;
+}
+
+.tweet-img{
+  width: 95%;
+  height: 400px;
+  border-radius: 4%;
+}
+
+.tweet-img img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 3%;
+}
+
+.tweet-date{
+
+}
+
+.tweet-bar{
+  width: 95%;
+  padding: 20px;
+  border-radius: 4%;
+}
+
+.navbar-deco{
+  padding: 10px 10px;
+  background: #36D1DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1a4e78, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1a4e78, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.secondary-color{
+  color: white;
+}
+
+
+#twitter-icon{
+  vertical-align: bottom;
+  height: 35px;
+  width: 35px;
+}
+
+#signin-body{
+  position: fixed;
+  height: 100vh !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #36D1DC;  /* fallback for old browsers */
+  /* background-color: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  Chrome 10-25, Safari 5.1-6 */
+  /* background-color: linear-gradient(to right, #5B86E5, #36D1DC);  */ 
+  background-color: white;
+background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+
+.form-body{
+  width: 500px;
+  height: 600px;
+  border: grey solid 2px;
+  border-radius: 7px;
+  padding: 30px;
+}
+
+.form-signin {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-signin{
+  background-color: #36D1DC;
+  border:#36D1DC solid 1px;
+}
+
+.button-signin:hover{
+  background-color: white; /* Green */
+  color: black;
+}
+
+.button-signup{
+  background-color: #1a4e78;
+  border:#1a4e78 solid 1px;
+}
+
+.button-signup:hover{
+  background-color: white; /* Green */
+  color: black;
+}
+
+.button-submit{
+  background-color: #36D1DC;
+  border:none;
+}
+
+.button-submit:hover{ 
+  background-color: transparent;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: all 1s;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.home-login{
+  border: solid white 1px;
+  margin: 0px 5px;
+  border-radius: 3px;
+}
+
+.home-login:hover{
+  border-color: black;
+}
+
+.home-page{
+  background-color: #EFF5F5;
+  background-image: url("https://www.transparenttextures.com/patterns/pixel-weave.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.loader-container{
+  display: flex;
+  justify-content: center;
+}
+
+.backtohome-button{
+  border-radius: 2px;
+}
+
+.backtohome-button:hover{
+  background: -webkit-linear-gradient(to right, #1D5D9B, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1D5D9B, #36D1DC);
+}
+
+.error-para{
+  color: red;
+}
+
+.menu-container{
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  border-right: 1px solid ;
+  border-color: rgb(33, 37, 41);
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 40px;
+}
+
+.menu-container > h2{
+  font-family: 'Calistoga', cursive;
+  color: #36D1DC;
+  text-decoration:underline; 
+}
+
+.profile-container{
+  position: fixed;
+  width: 20%;
+  height: 60vh;
+  margin-top: 10px;
+  margin-right: 2%;
+  /* background: rgba(29, 93, 155,0.9); */
+  background: -webkit-linear-gradient(to right, #1a4e78, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(145deg,#36D1DC, #1a4e78);
+  color: white;
+  padding: 10px;
+  right: 0;
+  border-radius: 5%;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.profile-container:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transition: box-shadow 0.8s ease-out;
+}
+
+.profile-container  p {
+  font-size: 1rem;
+}
+
+.profile-container > div > p > span{
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+.avatar-svg{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.right-border-div{
+  position: fixed;
+  height: 100vh;
+  right: 23%;
+  width: 2%;
+  border-left:  solid 1px;
+  border-color: rgb(33, 37, 41);
+}
+
+.backtotop-container{
+  position: fixed;
+  width: 20%;
+  height: 20vh;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.backtotop-button{
+  background-color: #1a4e78 !important;
+  color: white !important;
+}
+
+.backtotop-button:hover{
+  opacity: 0.3;
+}
+
+.menu-button-container{
+  height: 80%;
+  margin: 30px 10px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 30px;
+}
+
+.menu-button{
+  height: 60px;
+  width: 60%;
+  background-color: #D6E4E5;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  margin-left: 22%;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  box-shadow:6px 6px 0 rgba(0,0,0,.3);
+}
+
+.menu-button:hover{
+  background-color: #1a4e78;
+  color: white;
+  width: 80%;
+  box-shadow:10px 10px 0 rgba(0,0,0,.5);
+  transition: all 1s ease-out;
+}
+
+.menu-button:last-child{
+  position: absolute;
+  bottom: 25%;
+  background-color: #1a4e78;
+  color: white;
+}
+
+.menu-button:disabled{
+  cursor: not-allowed;
+  opacity: 0.5; 
+}
+
+.parallelogram{
+  transform: skew(-20deg);
+}
+
+.parallelogram span{
+  display:inline-block;
+  transform: skew(20deg);
+}
+
+.compose-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height:100vh;
+}
+
+.compose-form{
+  width: 50%;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.gallery-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tweets-container{
+  width: 50%;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.img-input{
+  margin-left: 10px;
+}
+
+.post-button{
+  border-radius: 4px;
+  width: 15%;
+  background-color: #D6E4E5;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 11px 13px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none; 
+}
+
+.post-button:hover{
+  background-color: #1a4e78;
+  border: white;
+  color: white;
+  transition: all 1s ease-in-out;
+  font-size: 1.1rem;
+}
+
+.post-button:hover span{
+  display: none;
+}
+
+.post-button:hover::before{
+  content: "Tweet ->";
+}
+
+.form-buttons{
+  width: 100%;
+}
+
+.space-div{
+  display: inline-block;
+  width: 130px;
+}
+
+.lds-ellipsis div{
+  background-color: #36D1DC;
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+.h1-loader{
+  margin: 0;
+  padding: 0;
+  font-family: ‘Arial Narrow’, sans-serif;
+  font-weight: 100;
+  font-size: 1.1em;
+  color: #f6f9fa;
+}
+
+.span-loader {
+  position: relative;
+  top: 0.63em;  
+  display: inline-block;
+  text-transform: uppercase;  
+  opacity: 0;
+  transform: rotateX(-90deg);
+}
+
+.div-loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(145deg, #1a4e78, #36D1DC);
+}
+
+.let1 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.let2 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+
+.let3 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.let4 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 0.3s;
+
+}
+
+.let5 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+.let6 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.let7 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay:0.6s;
+}
+
+@keyframes drop {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 1;
+        top: 3.78em;
+        transform: rotateX(-360deg);
+    }
+    80% {
+        opacity: 1;
+        top: 3.78em;
+        transform: rotateX(-360deg);
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        top: 6.94em
+    }
+}
+
+.gallery-loader{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
